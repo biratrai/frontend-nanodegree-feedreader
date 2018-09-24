@@ -68,6 +68,9 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
+         it('displays when clicked and hides when clicked again',function(){
+            
+         });
     });
     
     /* TODO: Write a new test suite named "Initial Entries" */
