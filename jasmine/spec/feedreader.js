@@ -69,7 +69,16 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
          it('displays when clicked and hides when clicked again',function(){
-            
+            var menuIcon = $('.menu-icon-link');             
+            var menuBody = $('body');   
+
+            // menu icon toggle to show the menu
+            menuIcon.click();
+            expect(menuBody.hasClass("menu-hidden")).toBe(false);
+
+            // menu icon toggle to hide the menu
+            menuIcon.click();
+            expect(menuBody.hasClass("menu-hidden")).toBe(true);
          });
     });
     
